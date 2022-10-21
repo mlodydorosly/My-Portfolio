@@ -32,7 +32,7 @@ const filterList = () => {
 
 }
 
-select.addEventListener('click',filterList)
+select.addEventListener('change',filterList)
 
 const slider = document.querySelector('.switch input');
 const span = document.querySelector('.switch span');

@@ -54,17 +54,15 @@ table {
 
 .container {
   background-color: white;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   border-radius: 0.8rem;
   font-size: 18px;
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.header {
-  height: 140px;
-  background-image: url("../images/bg-pattern-card.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+.card-bg {
+  width: 100%;
   border-radius: 0.8rem 0.8rem 0 0;
 }
 
@@ -190,13 +188,6 @@ body {
 
 @media screen and (max-width: 995px) {
   .circle-image {
-    width: 100vw;
-    height: 100vh;
-  }
-  .left-top {
-    transform: translate(-40%, -30%);
-  }
-  .right-bottom {
-    transform: translate(40%, 60%);
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

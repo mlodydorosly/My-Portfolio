@@ -2,17 +2,15 @@ $Border-radius-card: 0.8rem;
 
 .container {
     background-color: white;
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     border-radius: $Border-radius-card;
     font-size: 18px;
     font-family: $Kumbh-font;
 }
 
-.header {
-    height: 140px;
-    background-image: url('../images/bg-pattern-card.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+.card-bg{
+    width: 100%;
     border-radius: $Border-radius-card $Border-radius-card 0 0;
 }
 

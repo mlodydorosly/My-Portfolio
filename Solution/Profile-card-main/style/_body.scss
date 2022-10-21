@@ -7,7 +7,6 @@ body{
     min-height: 100vh;
     overflow: hidden;
 }
-
 .circle-image{
     position: absolute;
     background-repeat: no-repeat;
@@ -16,7 +15,6 @@ body{
     height: 75vw;
     z-index: -1;
 }
-
 .left-top{
     background-image: url('../images/bg-pattern-top.svg');
     left: 0;
@@ -29,33 +27,20 @@ body{
     bottom: 0;
     transform: translate(30%, 65%);
 }
-
-
-
 .attribution {
     position: absolute;
     margin: 0 auto;
     bottom: 0;
     padding: 0.5rem;
 }
-
 .attribution a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
-
 @media screen and (max-width: 995px) {
     .circle-image{
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .left-top{
-        transform: translate(-40%, -30%);
-    }
-    .right-bottom{
-        transform: translate(40%, 60%);
+        display: none;
     }
 }
 

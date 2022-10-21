@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  background-color: white;
+  width: 360px;
+  border-radius: 0.8rem;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.header {
+  height: 140px;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-avatar {
+  position: relative;
+  height: 50px;
+  top: -60px;
+}
+
+.article-avatar img {
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.article-information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 100%;
+  border-bottom: 0.5px solid hsl(0deg, 0%, 59%);
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 400;
+}
+
+.information-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.information-age {
+  margin-left: 0.5rem;
+  font-weight: 400;
+  color: hsl(227deg, 10%, 46%);
+}
+
+.information-city {
+  margin: 0.7rem 0 1.5rem 0;
+  font-size: 0.9rem;
+  color: hsl(227deg, 10%, 46%);
+}
+
+.article-stats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(227deg, 10%, 46%);
+}
+
+.stats-value {
+  padding: 0.5rem;
+  font-weight: 700;
+  color: hsl(229deg, 23%, 23%);
+  font-size: 1.1rem;
+}
+
+.stats-name {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(185deg, 75%, 39%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.circle-image {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 75vw;
+  height: 75vw;
+  z-index: -1;
+}
+
+.left-top {
+  background-image: url("../images/bg-pattern-top.svg");
+  left: 0;
+  top: 0;
+  transform: translate(-40%, -50%);
+}
+
+.right-bottom {
+  background-image: url("../images/bg-pattern-bottom.svg");
+  right: 0;
+  bottom: 0;
+  transform: translate(30%, 65%);
+}
+
+.attribution {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  padding: 0.5rem;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 995px) {
+  .circle-image {
+    width: 100vw;
+    height: 100vh;
+  }
+  .left-top {
+    transform: translate(-40%, -30%);
+  }
+  .right-bottom {
+    transform: translate(40%, 60%);
+  }
+}/*# sourceMappingURL=style.css.map */

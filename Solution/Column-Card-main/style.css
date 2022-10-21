@@ -1,0 +1,134 @@
+:root {
+    /* bg cards */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* (paragraphs) */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    /* fonts */
+    --Big-Shoulders: 'Big Shoulders Display', cursive;
+    --Laxend-Deca: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: var(--Very-light-gray);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    max-width: 900px;
+}
+
+.item-card {
+    padding: 3rem 3rem;
+}
+
+.item-card img {
+    display: block;
+}
+
+.card-title {
+    color: var(--Very-light-gray);
+    font: 2.4rem var(--Big-Shoulders);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 2.2rem 0;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+
+
+
+.card-description {
+    color: var(--Transparent-white);
+    font: 0.9rem var(--Laxend-Deca);
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-bottom: 2.2rem;
+}
+
+
+.card-button {
+    border: none;
+    border-radius: 1.5rem;
+    width: 75%;
+    margin-top: 2.2rem;
+    padding: 1rem;
+    font: 1rem var(--Laxend-Deca);
+    color: none;
+    cursor: pointer;
+    transition: background-color 500ms ease-in-out;
+}
+
+.card-button:hover {
+    background-color: hsl(0, 0%, 89%);
+}
+
+.item-card a {
+    text-decoration: none;
+}
+
+
+.sedans-button{
+    color: var(--Bright-orange);
+}
+.suvs-button{
+    color: var(--Dark-cyan);
+}
+.luxury-button{
+    color: var(--Very-dark-cyan);
+}
+
+
+
+.attribution {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-card {
+        flex-direction: column;
+    }
+    .sedans{
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    }
+
+
+    .luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 0.5rem 0.5rem;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset-style.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <div class="main-card">
+    <div class="card-rating">
+      <div class="card-star-img">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <h1 class="card-title">How did we do?</h1>
+      <p class="card-description">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <div class="rating">
+        <button class="button-rating">1</button>
+        <button class="button-rating">2</button>
+        <button class="button-rating">3</button>
+        <button class="button-rating">4</button>
+        <button class="button-rating">5</button>
+      </div>
+      <form action="">
+      </form>
+      <button id="card-check-button">Submit</button>
+    </div>
+
+    <div class="card-end">
+      <div class="card-end-img">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <p class="card-end-rating">
+        You selected
+        <span id="rate-client"></span> out of 5
+        </p>
+        <h2 class="card-end-title">Thank you!</h2>
+      <p class="card-end-description">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Maciej</a>.
+  </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

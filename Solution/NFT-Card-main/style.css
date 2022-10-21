@@ -1,0 +1,219 @@
+:root {
+    /* Primary color */
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*  Neutral */
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg:  hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--main-bg);
+    padding: 10px;
+}
+
+.card-screen{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    color: white;
+    font-size: 15px;
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.8rem;
+    font-family: 'Outfit', sans-serif;
+    max-width: 300px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-image{
+   width: 100%;
+   min-height: 100%;
+}
+
+.image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    left: 0;
+    background-color: var(--Cyan);
+}
+.image::after
+{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 125px;
+    top: 125px;
+    opacity: 0;
+    background-image: url("images/icon-view.svg");
+    background-repeat: no-repeat;
+}
+.image:hover::before,.image:active::before{
+    opacity: 0.5;
+}
+.image:hover::after, .image:active::after{
+    opacity: 1;
+}
+
+.image{
+    opacity: 1;
+}
+
+.card-title
+{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: color 300ms ease-in-out;
+}
+
+.card-title:hover, .card-title:active{
+    color: var(--Cyan);
+}
+
+.card-decription{
+    font-size: 1.1rem;
+    color: var(--Soft-blue);
+    margin: 0;
+    max-width: 95%;
+}
+
+.card-price{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line-color);
+    padding: 1.5rem 0rem;
+    margin: 0.2rem 0;
+}
+
+.card-price p svg{
+    margin-right: 0.4rem;
+    position: relative;
+    top: 3px;
+}
+.price{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.time{
+    color: var(--Soft-blue);
+}
+
+
+
+.card-profile{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.card-profile-image, .card-profle-name{
+    display: inline;
+}
+
+.card-profle-name
+{
+    margin-left: 1rem;
+    font-weight: 600;
+    color: var(--Soft-blue);
+}
+
+.card-autor-name{
+    color: var(--White);
+    margin-left: 0.2rem;
+    text-decoration: none;
+    transition: color 300ms ease-in-out;
+}
+
+.card-autor-name:hover,.card-autor-name:active{
+    color: var(--Cyan);
+}
+
+.card-profile-image
+{
+    max-width: 30px;
+    border: 0.1rem solid white;
+    border-radius: 100%;
+}
+
+.attribution{
+    margin-top: 1rem;
+    color: white;
+    font-size: 0.8rem;
+}
+.attribution a {
+    color: var(--Cyan);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 300ms ease-in-out;
+}
+
+.attribution a:hover{
+    color: hsl(178, 100%, 45%);;
+}
+

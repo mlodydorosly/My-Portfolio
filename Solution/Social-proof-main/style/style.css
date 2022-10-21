@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.left-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  transform: scale(-1, -1);
+  z-index: -1;
+}
+
+.left-top img, .right-bottom img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+  .left-top {
+    width: 90%;
+  }
+  .right-bottom {
+    display: none;
+  }
+}
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 1150px;
+  font: 15px "League Spartan", sans-serif;
+  margin-top: 11rem;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+}
+
+.header-left-panel {
+  color: hsl(300deg, 43%, 22%);
+  width: 50%;
+}
+
+.header-right-panel {
+  width: 50%;
+}
+
+.header-right-panel {
+  display: flex;
+  flex-direction: column;
+}
+.header-right-panel .secound {
+  margin-left: 2.5rem;
+}
+.header-right-panel .thrid {
+  margin-left: 5rem;
+}
+
+.header-left-panel-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  max-width: 70%;
+}
+
+.header-left-panel-description {
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 80%;
+  line-height: 1.5rem;
+  color: hsl(303deg, 10%, 53%);
+}
+
+.header-right-panel-rating {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 1.1rem;
+  width: 78%;
+  background-color: hsl(300deg, 24%, 96%);
+}
+
+.rating-stars {
+  margin-left: 0.8rem;
+}
+
+.rating-stars-icon {
+  margin-left: 0.3rem;
+}
+
+.rating-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  color: hsl(300deg, 43%, 22%);
+}
+
+.main {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.main .secound {
+  margin-top: 2.5rem;
+}
+.main .thrid {
+  margin-top: 5rem;
+}
+
+.article {
+  background-color: hsl(300deg, 43%, 22%);
+  color: white;
+  font-size: 1rem;
+  padding: 2.5rem 0 2.5rem 2rem;
+  border-radius: 0.8rem;
+  width: 100%;
+}
+
+.article-top {
+  display: flex;
+  align-items: center;
+}
+
+.article-top-information-data {
+  margin-left: 1.5rem;
+}
+
+.article-name {
+  font-weight: 500;
+}
+
+.article-verified {
+  color: hsl(333deg, 80%, 67%);
+  margin-top: 0.3rem;
+  font-weight: 400;
+}
+
+.article-img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+
+.article-description {
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+  width: 85%;
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    width: 80%;
+  }
+  .header-right-panel-rating {
+    width: 95%;
+  }
+  .header-right-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .header-right-panel .secound {
+    margin-left: 0;
+  }
+  .header-right-panel .thrid {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .container {
+    width: 70%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header-left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-right-panel {
+    align-items: center;
+  }
+  .header-right-panel-rating {
+    display: flex;
+    flex-direction: column;
+  }
+  .rating-stars {
+    margin-left: 0rem;
+  }
+  .rating-text {
+    margin: 0.5rem 0 0 0;
+  }
+  .header-left-panel,
+.header-right-panel {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main .secound {
+    margin-top: 2.5rem;
+  }
+  .main .thrid {
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .container {
+    width: 90%;
+  }
+  .header-left-panel-title {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

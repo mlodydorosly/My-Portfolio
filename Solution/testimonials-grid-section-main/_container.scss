@@ -1,0 +1,102 @@
+body {
+    background-color: $White;
+    font: 15px $Barlow-font;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $Light-grayish-blue;
+}
+
+.contanier {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    max-width: 1200px;
+    margin: 1.5rem;
+
+    .box {
+        padding: 1.8rem 2rem;
+        border-radius: 0.7rem;
+        color: $White;
+
+        .box-profile {
+            display: flex;
+            align-items: center;
+
+            .avatar {
+                border-radius: 2rem;
+                border: 0.1rem solid $White;
+                width: 2rem;
+            }
+
+            .profile-information {
+                display: block;
+                margin-left: 1.5rem;
+                font-size: 1rem;
+            }
+
+            .profile-information-verified {
+                color: $Light-gray;
+                margin-top: 0.1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        .box-description {
+            margin-top: 1.5rem;
+
+            .box-description-title {
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .box-description-text {
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+                color: $Light-gray;
+            }
+        }
+    }
+    .white-box{
+        color: $Very-dark-grayish-blue;
+
+    }
+    .box1 {
+        grid-area: 1 / 1 / 3 / 3;
+        background-color: $Moderate-violet;
+
+    }
+
+    .box2 {
+        grid-area: 1 / 3 / 3 / 4;
+        background-color: $Very-dark-grayish-blue;
+    }
+
+    .box3 {
+        grid-area: 1 / 4 / 5 / 5;
+        background-color: $White;
+    }
+
+    .box4 {
+        grid-area: 3 / 1 / 5 / 2;
+        background-color: $White;
+    }
+
+    .box5 {
+        grid-area: 3 / 2 / 5 / 4;
+        background-color: $Very-dark-blackish-blue;
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    .contanier{
+        display: flex;
+        flex-direction: column;
+    }
+}

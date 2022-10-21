@@ -1,0 +1,145 @@
+:root{
+
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+
+/* font-family */
+--Overpass: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 15px;
+    color: white;
+}
+
+.main-card{
+    max-width: 350px;
+    padding: 2rem;
+    margin: 1.5rem;
+    font-family: var(--Overpass);
+    border-radius: 1.8rem;
+    background-color: #1b222c;
+}
+.card-star-img{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-star-img img{
+    height: 35%;
+}
+.card-title{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 2rem 0 0.8rem 0;
+}
+
+.card-description{
+    font-size: 0.95rem;
+    color: var(--Light-Grey);
+    padding-right: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rating .button-rating{
+    background-color: var(--Dark-Blue);
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    font-weight: bold;
+    color: var(--Medium-Grey);
+    font: 1rem var(--Overpass);
+    font-weight: 700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rating .button-rating:hover, .rating .button-rating:active {
+    background-color: var(--Medium-Grey);
+    color: white;
+}
+
+.rating #clicked{
+    background-color: var(--Orange);
+    color: white;
+}
+
+#card-check-button{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--Orange);
+    color: var(--White);
+    text-transform: uppercase;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+}
+
+.card-end
+{
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-end-img{
+    text-align: center;
+}
+
+.card-end-img img{
+    width: 10rem;
+}
+
+.card-end-rating {
+    color: var(--Orange);
+    padding: 1rem;
+    background-color: #262f38;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.card-end-title{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.card-end-description {
+    max-width: 95%;
+    color: var(--Medium-Grey);
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--Orange); text-decoration: none; }
